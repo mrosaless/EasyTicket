@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="normal_font">14sp</dimen>
+    <dimen name="title_font">16sp</dimen>
+    <dimen name="big_font">20sp</dimen>
+    <dimen name="normal_padding">12dp</dimen>
+    <dimen name="normal_line_spacing_extra">4sp</dimen>
+    <dimen name="size_code">50dp</dimen>
+</resources>

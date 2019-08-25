@@ -1,0 +1,69 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="EditTextBase">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:background">@color/colorGray</item>
+        <item name="android:padding">@dimen/normal_padding</item>
+        <item name="android:maxLines">@integer/one_line</item>
+        <item name="android:ems">@integer/normal_ems</item>
+        <item name="android:textColorHint">@color/colorBlack</item>
+    </style>
+
+    <style name="EditTextCode" parent="EditTextBase">
+        <item name="android:inputType">numberPassword</item>
+        <item name="android:maxLines">@integer/one_line</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLength">@integer/one_line</item>
+    </style>
+
+    <style name="EditTextCodeFull" parent="EditTextBase">
+        <item name="android:inputType">numberPassword</item>
+        <item name="android:maxLines">@integer/one_line</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/defaul_number</item>
+        <item name="android:maxLength">@integer/one_line</item>
+    </style>
+
+    <style name="ButtonBase">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">@dimen/normal_line_spacing_extra</item>
+        <item name="android:textSize">@dimen/big_font</item>
+    </style>
+
+    <style name="TextViewBase">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:maxLines">@integer/one_line</item>
+        <item name="android:textSize">@dimen/normal_font</item>
+    </style>
+
+    <style name="TextViewTitle" parent="TextViewBase">
+        <item name="android:textSize">@dimen/title_font</item>
+    </style>
+
+    <style name="TextViewMenuWhite" parent="TextViewTitle">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/colorBgMenuWhite</item>
+    </style>
+
+    <style name="TextViewMenuGray" parent="TextViewTitle">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/colorBgMenuGray</item>
+    </style>
+
+</resources>

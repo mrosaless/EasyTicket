@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        tools:context=".login.LoginActivity">
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:id="@+id/textView2"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/login_init_sesion"
+            android:layout_marginTop="120dp"
+            style="@style/TextViewTitle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+    />
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="32dp"
+            android:hint="@string/login_hint_username"
+            android:layout_marginEnd="32dp"
+            style="@style/EditTextBase"
+            android:maxLength="@integer/length_celphone"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+    />
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/login_hint_pass"
+            style="@style/EditTextBase"
+            android:maxLength="@integer/length_password"
+            app:layout_constraintTop_toBottomOf="@+id/editText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+    />
+
+    <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:id="@+id/loginBtn"
+            style="@style/ButtonBase"
+            android:text="@string/login_btn"
+            app:layout_constraintTop_toBottomOf="@+id/editText2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/normal_font"
+            android:textColor="@color/colorAccent"
+            android:lineSpacingExtra="2sp"
+            android:gravity="center_horizontal"
+            android:id="@+id/loginRegister"
+            android:layout_marginTop="64dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/login_register"
+            app:layout_constraintTop_toBottomOf="@+id/loginBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
