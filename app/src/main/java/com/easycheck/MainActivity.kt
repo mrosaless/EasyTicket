@@ -6,6 +6,8 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
+import com.easycheck.administration.AdministrationFragment
+import com.easycheck.profile.ProfileFragment
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -23,13 +25,13 @@ class MainActivity : AbstractActivity(), NavigationView.OnNavigationItemSelected
     override fun onNavigationItemSelected(menuItem: MenuItem): Boolean {
         when (menuItem.itemId) {
             R.id.menuHome -> {
-                //navigateToFragment(InboxFragment.newInstance())
+                navigateToFragment(HomeFragment.newInstance())
             }
             R.id.menuProfile -> {
-                //navigateToFragment(InboxFragment.newInstance())
+                navigateToFragment(ProfileFragment.newInstance())
             }
             R.id.menuAdmin -> {
-                //navigateToFragment(InboxFragment.newInstance())
+                navigateToFragment(AdministrationFragment.newInstance())
             }
             R.id.menuNotification -> {
                 //navigateToFragment(InboxFragment.newInstance())
